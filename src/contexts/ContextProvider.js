@@ -3,7 +3,9 @@ import React, { createContext, useContext, useState } from 'react';
 const StateContext = createContext();
 
 const initialState = {
+  //chat dropdown is set to false located at header section.
   chat: false,
+  //Similarly, cart dropdown is set to false and so on
   cart: false,
   userProfile: false,
   notification: false,
@@ -30,7 +32,7 @@ export const ContextProvider = ({ children }) => {
   const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
+    // A Provider has a value is basically an object which is to be passed to all the components
     <StateContext.Provider value={{ currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings }}>
       {children}
     </StateContext.Provider>

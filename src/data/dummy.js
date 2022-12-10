@@ -615,6 +615,15 @@ export const chatData = [
 
 export const earningData = [
   {
+    icon: <BsCurrencyDollar />,
+    amount: '$63,448.78',
+    percentage: '-8%',
+    title: 'Earnings',
+    iconColor: 'rgb(28 111 116)',
+    iconBg: 'rgb(192 205 241)',
+    pcColor: 'red-600',
+  },
+  {
     icon: <MdOutlineSupervisorAccount />,
     amount: '39,354',
     percentage: '-4%',
