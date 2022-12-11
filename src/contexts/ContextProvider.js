@@ -5,8 +5,10 @@ const StateContext = createContext();
 const initialState = {
   //chat dropdown is set to false located at header section.
   chat: false,
+
   //Similarly, cart dropdown is set to false and so on
   cart: false,
+  
   userProfile: false,
   notification: false,
 };
